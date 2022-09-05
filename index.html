@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduktion till webbutveckling - uppgift 3</title>
+  <style>
+    h1#hi {
+      color: #395598;
+    }
+  </style>
+</head>
+<body>
+    <h1 id="hi">Hello World</h1>
+    <button onclick="goodbye()">Goodbye? Hello!</button>
+
+  <script>
+  function goodbye() {
+    const h1 = document.getElementById("hi")
+    h1.textContent === "Hello World" ? h1.textContent = 'Goodbye World' : h1.textContent = "Hello World"
+  }
+  </script>
+</body>
+</html>
